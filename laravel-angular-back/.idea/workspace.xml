@@ -2,23 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="480b52dd-312e-492f-bf35-34552d79fe3f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/laravel-angular-back.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel-angular-back.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../laravel-angular-front/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel-angular-front/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../laravel-angular-front/src/app/components/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel-angular-front/src/app/components/login/login.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../laravel-angular-front/src/app/components/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel-angular-front/src/app/components/login/login.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../laravel-angular-front/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel-angular-front/src/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
@@ -167,6 +165,11 @@
       <updated>1576053782458</updated>
       <workItem from="1576053783785" duration="3847000" />
       <workItem from="1576074956474" duration="1496000" />
+      <workItem from="1576138306549" duration="2603000" />
+      <workItem from="1576223255598" duration="258000" />
+      <workItem from="1576223533172" duration="208000" />
+      <workItem from="1576223763267" duration="8000" />
+      <workItem from="1576223790446" duration="4346000" />
     </task>
     <servers />
   </component>
@@ -178,13 +181,33 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.php" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="341" y="164" key="com.intellij.ide.util.TipDialog" timestamp="1576074957133">
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1576235299540">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="341" y="164" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1576074957133" />
-    <state x="0" y="0" width="609" height="680" key="find.popup" timestamp="1576076229536">
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1576235299540" />
+    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1576235299540">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="0" y="0" width="609" height="680" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1576076229536" />
+    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1576235299540" />
+    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1576235299539">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1576235299539" />
+    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1576235299540">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1576235299540" />
+    <state x="341" y="164" key="com.intellij.ide.util.TipDialog" timestamp="1576223790706">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="341" y="164" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1576223790706" />
+    <state x="0" y="0" width="609" height="680" key="find.popup" timestamp="1576140928306">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="0" y="0" width="609" height="680" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1576140928306" />
+    <state x="303" y="1" key="search.everywhere.popup" timestamp="1576138413149">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1576138413149" />
   </component>
 </project>

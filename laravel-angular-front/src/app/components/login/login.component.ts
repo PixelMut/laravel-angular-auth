@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
+import {HttpReqService} from '../../services/http-req.service';
+import {TokenService} from '../../services/token.service';
 
 @Component({
   selector: 'app-login',
@@ -13,22 +15,34 @@ export class LoginComponent implements OnInit {
     password : ''
   };
 
-  constructor(private http: HttpClient) { }
+  error = null;
+
+  constructor(private httpreqservice: HttpReqService,
+              private tokenservice : TokenService) { }
 
   ngOnInit() {
   }
 
   onSubmit(){
-    console.log(this.form);
-    return this.http.post('http://localhost:8000/api/login', this.form).subscribe(
-      (data)=>{
-        console.log(data);
+
+    return this.httpreqservice.login(this.form).subscribe(
+      (data) => {
+        this.handleResponse(data);
       },
       (error)=>{
-        console.log(error);
+        this.handleError(error);
       }
     );
 
   }
 
+  handleResponse(data){
+    this.tokenservice.handle(data.access_token)
+  }
+
+  handleError(error){
+    this.error = error.error.error;
+    //console.log(this.error)
+
+  }
 }

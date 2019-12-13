@@ -12,6 +12,8 @@ import { AppRoutingModule } from './app-routing.module';
 import {RouterModule} from '@angular/router';
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import {HttpReqService} from './services/http-req.service';
+import {TokenService} from './services/token.service';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,7 @@ import {HttpClientModule} from '@angular/common/http';
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [HttpReqService, TokenService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
