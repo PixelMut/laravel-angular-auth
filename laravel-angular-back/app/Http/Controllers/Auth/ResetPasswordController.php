@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
+use http\Env\Request;
 use Illuminate\Foundation\Auth\ResetsPasswords;
 
 class ResetPasswordController extends Controller
@@ -26,5 +27,9 @@ class ResetPasswordController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
+    //protected $redirectTo = RouteServiceProvider::HOME;
+
+    public function sendEmail(Request $request){
+        return $request->all();
+    }
 }

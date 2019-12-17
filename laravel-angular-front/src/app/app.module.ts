@@ -14,6 +14,8 @@ import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import {HttpReqService} from './services/http-req.service';
 import {TokenService} from './services/token.service';
+import {AuthService} from './services/auth.service';
+import {SnotifyModule, SnotifyService, ToastDefaults} from 'ng-snotify';
 
 @NgModule({
   declarations: [
@@ -30,9 +32,16 @@ import {TokenService} from './services/token.service';
     AppRoutingModule,
     RouterModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    SnotifyModule
   ],
-  providers: [HttpReqService, TokenService],
+  providers: [
+    {provide : 'SnotifyToastConfig', useValue : ToastDefaults},
+    HttpReqService,
+    TokenService,
+    AuthService,
+    SnotifyService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

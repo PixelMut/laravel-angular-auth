@@ -15,4 +15,13 @@ export class HttpReqService {
   signup(form){
     return this.http.post(`${this.baseUrl}/signup`, form);
   }
+
+  sendPwdResetLink(data){
+    return this.http.post(`${this.baseUrl}/sendPasswordResetLink`, data);
+  }
+
+  changePassword(form){
+    return this.http.post(`${this.baseUrl}/resetPassword`, form);
+  }
+
 }

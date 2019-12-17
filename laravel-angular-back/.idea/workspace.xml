@@ -2,14 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="480b52dd-312e-492f-bf35-34552d79fe3f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ChangePasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ResetPasswordController2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/ChangePasswordRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Mail/ResetPasswordMail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Email/passwordReset.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../laravel-angular-front/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../laravel-angular-front/.idea/typescript-compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel-angular-front/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel-angular-front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel-angular-front/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel-angular-front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel-angular-front/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel-angular-front/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel-angular-front/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel-angular-front/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel-angular-front/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel-angular-front/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel-angular-front/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../laravel-angular-front/src/app/components/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel-angular-front/src/app/components/login/login.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../laravel-angular-front/src/app/components/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel-angular-front/src/app/components/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel-angular-front/src/app/components/navbar/navbar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel-angular-front/src/app/components/navbar/navbar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel-angular-front/src/app/components/navbar/navbar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel-angular-front/src/app/components/navbar/navbar.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel-angular-front/src/app/components/password/request-reset/request-reset.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel-angular-front/src/app/components/password/request-reset/request-reset.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel-angular-front/src/app/components/password/request-reset/request-reset.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel-angular-front/src/app/components/password/request-reset/request-reset.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel-angular-front/src/app/components/password/response-reset/response-reset.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel-angular-front/src/app/components/password/response-reset/response-reset.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel-angular-front/src/app/components/password/response-reset/response-reset.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel-angular-front/src/app/components/password/response-reset/response-reset.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel-angular-front/src/app/components/signup/signup.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel-angular-front/src/app/components/signup/signup.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel-angular-front/src/app/services/http-req.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel-angular-front/src/app/services/http-req.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel-angular-front/src/app/services/token.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel-angular-front/src/app/services/token.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +40,7 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
-      <executable />
+      <executable path="composer" />
     </execution>
   </component>
   <component name="Git.Settings">
@@ -121,13 +142,16 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1UqCt9MJicRVTruxbz6gGaNFews" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -170,6 +194,7 @@
       <workItem from="1576223533172" duration="208000" />
       <workItem from="1576223763267" duration="8000" />
       <workItem from="1576223790446" duration="4346000" />
+      <workItem from="1576485152084" duration="10387000" />
     </task>
     <servers />
   </component>
@@ -180,7 +205,18 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.php" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="371" y="95" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1576494060904">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="371" y="95" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1576494060904" />
+    <state x="418" y="253" key="ComposerInitDialogKey" timestamp="1576495195694">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="418" y="253" key="ComposerInitDialogKey/0.0.1280.680@0.0.1280.680" timestamp="1576495195694" />
     <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1576235299540">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -197,14 +233,14 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1576235299540" />
-    <state x="341" y="164" key="com.intellij.ide.util.TipDialog" timestamp="1576223790706">
+    <state x="341" y="164" key="com.intellij.ide.util.TipDialog" timestamp="1576485159329">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="341" y="164" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1576223790706" />
-    <state x="0" y="0" width="609" height="680" key="find.popup" timestamp="1576140928306">
+    <state x="341" y="164" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1576485159329" />
+    <state x="0" y="0" width="609" height="680" key="find.popup" timestamp="1576502773200">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="0" y="0" width="609" height="680" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1576140928306" />
+    <state x="0" y="0" width="609" height="680" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1576502773200" />
     <state x="303" y="1" key="search.everywhere.popup" timestamp="1576138413149">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

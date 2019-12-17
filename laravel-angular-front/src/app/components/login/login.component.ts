@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {HttpReqService} from '../../services/http-req.service';
 import {TokenService} from '../../services/token.service';
+import {Router} from '@angular/router';
+import {AuthService} from '../../services/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -18,7 +20,9 @@ export class LoginComponent implements OnInit {
   error = null;
 
   constructor(private httpreqservice: HttpReqService,
-              private tokenservice : TokenService) { }
+              private tokenservice : TokenService,
+              private router: Router,
+              private authsrv: AuthService) { }
 
   ngOnInit() {
   }
@@ -37,7 +41,10 @@ export class LoginComponent implements OnInit {
   }
 
   handleResponse(data){
-    this.tokenservice.handle(data.access_token)
+    this.tokenservice.handle(data.access_token);
+    this.authsrv.changedAuthStatus(true);
+    // this.router.navigate(['/profile']);
+    this.router.navigateByUrl('/profile');
   }
 
   handleError(error){
